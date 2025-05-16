@@ -1,0 +1,258 @@
+/* Reset and Base Styles */
+body {
+    font-size: 1.25rem; /* Scales up from the default 1rem */
+    line-height: 1.5;
+    zoom: 125%; /* This makes the content look like it is zoomed in */
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+  }
+  
+  /* Container */
+  #firstdiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffcccc, #ffe6e6);
+    border-radius: 15px;
+    padding: 50px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+    position: relative;
+  }
+  
+  /* Heading */
+  #firstdiv::before {
+    content: "Blood Stock Availability ";
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #ff4d4d, #e60000);
+    padding: 18px 35px;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 10;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  
+  /* Input Fields */
+  select {
+    flex: 1;
+    min-width: 220px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  select:hover,
+  select:focus {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button Styling */
+  #btn {
+    min-width: 250px;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ff4d4d, #e60000);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  #btn:hover {
+    background: linear-gradient(135deg, #e60000, #b30000);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Button Icon */
+  button img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Background Accent */
+  #firstdiv::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    background: url('https://example.com/blood-donation-accent.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.05;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  /* Table Design */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  
+
+  }
+  
+  thead {
+    background: linear-gradient(135deg, #ff4d4d, #e60000);
+    color: #fff;
+    text-transform: uppercase;
+ 
+    
+  }
+  
+  thead th {
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(255, 77, 77, 0.1);
+    cursor: pointer;
+  }
+  
+  tbody td {
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  tfoot {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  tfoot td {
+    padding: 10px 20px;
+  }
+  
+  /* No Data Available */
+  td[colspan="6"] {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #firstdiv {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+  
+    select,
+    button {
+      min-width: 100%;
+      margin: 10px 0;
+    }
+  
+    #firstdiv::before {
+      font-size: 22px;
+      top: -40px;
+    }
+  
+    table,
+    th,
+    td {
+      font-size: 14px;
+    }
+  
+    td,
+    th {
+      padding: 10px;
+    }
+  }
+
+  #pagination button {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  #pagination button:hover {
+    background-color: #b30000;
+  }
+  
+  @media (max-width: 480px){
+   
+    #firstdiv {
+     
+      align-items: center;
+      width: 100vh;
+      justify-content: center;
+      flex-direction: column;
+      
+    }
+    #firstdiv select{
+      font-size: 12px;
+      margin-left: -30px;
+    }
+
+    #firstdiv option{
+      width: 200px;
+    }
+
+   
+    
+  
+  }
+    
+  
+
+
+
+
+
+  

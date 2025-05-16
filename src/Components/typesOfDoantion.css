@@ -1,0 +1,87 @@
+
+.m{
+    border-radius: 19px;
+   
+    margin-top: 30px;
+  
+    transition: 0.3s;
+}
+#tod{
+   margin-top: 10px;
+  padding-left: 2rem;
+  
+}
+#tod h1{
+    color: #DD3D3D;
+    font-size: 32px;
+}
+#tod p{
+    font-size: 15px;
+    color: black;
+}
+#tod span{
+    color: #EC1A23;
+    font-weight: bold;
+}
+#maincon{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.con1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.two{
+    display: flex;
+    border: 0.5px solid  rgb(240, 237, 237);
+    width: 120vh;
+    border-radius: 15px;
+    padding: 10px;
+    height: 50vh;
+    justify-content: space-around;
+}
+.imgcon3{
+    height: 250px;
+    margin-left: -20px;
+   
+}
+#tex{
+    width: 410px;
+    height: 250px;
+    border: 0px solid transparent;
+    overflow: scroll;
+    overflow-x: hidden;
+    text-align: left;
+    font-size: 14px;
+    
+}
+.con1{
+   
+    height: fit-content;
+    border-radius: 12px;
+}
+.con1btn{
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 0 5px 5px 0;
+    border-color: transparent;
+    text-align: left;
+}
+
+.con1btn.active {
+    background-color:#fab4b1 ; /* Change to your desired active background color */
+    color: #ee1005;
+} 
+
+.con1 button:hover{
+  background-color: #FFEEED;
+  cursor: pointer;
+  color: #ee1005;
+}
