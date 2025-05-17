@@ -6,7 +6,7 @@ import BloodAvailability from './BloodAvailability/page';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './Components/home.jsx';
+import Home from './Components/Home';
 
 const App = () => {
   return (
