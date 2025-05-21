@@ -148,7 +148,7 @@ const Home = () => {
        <p className="footer-disclaimer">
   Disclaimer: This website uses publicly available data from the official <a href="https://eraktkosh.mohfw.gov.in/eraktkoshPortal/#/" target="_blank" rel="noopener noreferrer">eRaktKosh</a> portal (Ministry of Health & Family Welfare, Government of India) for demonstration purposes only. We do not claim ownership of the data or API, and this platform is not intended for commercial use.
 </p>
- <p>© 2025 SmartBlood | Together, we save lives</p>
+ <p>© 2025 SmartBlood | Together, we save lives <a href="https://wa.me/+918767375114"> ❤️Ved Mahajan </a></p>
       </footer>
     </div>
   );
